@@ -474,8 +474,103 @@ body {
   color: #fff;
 }
 
+/* Секция этапов запуска */
+.steps {
+  padding: 80px 0;
+}
+
+.steps__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 64px;
+}
+
+.steps__list {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.steps__list::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 48px;
+  bottom: 48px;
+  width: 1px;
+  background-color: #e0e0e0;
+}
+
+.steps__item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.steps__item:last-child {
+  margin-bottom: 0;
+}
+
+.steps__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.steps__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.steps__item-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+  .steps__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .steps__list::before {
+    left: 20px;
+  }
+
+  .steps__number {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .steps__item {
+    gap: 24px;
+  }
+
+  .steps__item-title {
+    font-size: 16px;
+  }
+
+  .steps__item-text {
+    font-size: 14px;
+  }
+
   .rebranding__container {
     flex-direction: column;
     gap: 40px;
