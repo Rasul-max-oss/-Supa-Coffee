@@ -146,8 +146,62 @@ body {
   object-fit: cover;
 }
 
+/* Секция "О нас" */
+.about {
+  background-color: #faf7f2;
+  padding: 80px 0;
+}
+
+.about__icon {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about__icon-svg {
+  width: 64px;
+  height: 64px;
+}
+
+.about__text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #1a1a1a;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 64px;
+}
+
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.about__feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.about__feature-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+  .about__features {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about__text {
+    font-size: 18px;
+  }
+
   .hero__container {
     flex-direction: column;
     gap: 40px;
