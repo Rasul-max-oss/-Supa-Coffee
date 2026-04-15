@@ -82,13 +82,14 @@ body {
 
 /* Hero баннер */
 .hero {
-  padding: 80px 0;
+  min-height: 600px;
 }
 
 .hero__container {
   display: flex;
   align-items: center;
   gap: 60px;
+  min-height: 100%;
 }
 
 .hero__content {
@@ -135,11 +136,12 @@ body {
 
 .hero__image {
   flex: 1;
+  height: 600px;
 }
 
 .hero__image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 12px;
   object-fit: cover;
 }
