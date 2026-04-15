@@ -306,6 +306,85 @@ body {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Секция ребрендинга */
+.rebranding {
+  background-color: #faf7f2;
+  padding: 80px 0;
+}
+
+.rebranding__container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.rebranding__content {
+  flex: 1;
+}
+
+.rebranding__title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 32px;
+}
+
+.rebranding__text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.rebranding__link {
+  display: inline-block;
+  color: #D4940A;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.rebranding__link:hover {
+  opacity: 0.7;
+}
+
+.rebranding__images {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.rebranding__image {
+  position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rebranding__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rebranding__image--top {
+  width: 60%;
+  height: 280px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.rebranding__image--bottom {
+  width: 55%;
+  height: 220px;
+  bottom: 0;
+  right: 40px;
+  z-index: 2;
+}
+
 /* Секция форматов кофеен */
 .formats {
   padding: 80px 0;
@@ -353,7 +432,7 @@ body {
 
 .formats__card-image img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   display: block;
 }
@@ -397,6 +476,20 @@ body {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+  .rebranding__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .rebranding__title {
+    font-size: 28px;
+  }
+
+  .rebranding__images {
+    width: 100%;
+    height: 300px;
+  }
+
   .formats__grid {
     grid-template-columns: 1fr;
     gap: 40px;
