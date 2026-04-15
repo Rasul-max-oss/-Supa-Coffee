@@ -191,8 +191,81 @@ body {
   line-height: 1.6;
 }
 
+/* Секция "Что вы получите" */
+.benefits {
+  padding: 80px 0;
+}
+
+.benefits__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.benefits__subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.benefits__card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.benefits__card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.benefits__card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits__card-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.benefits__card-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits__title {
+    font-size: 28px;
+  }
+
   .about__features {
     grid-template-columns: 1fr;
     gap: 32px;
