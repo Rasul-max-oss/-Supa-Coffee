@@ -256,6 +256,17 @@ body {
   border-radius: 50%;
 }
 
+.benefits__illustration {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.benefits__illustration-svg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .benefits__grid {
