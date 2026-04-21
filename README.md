@@ -4,10 +4,6 @@
 
 **Посмотреть сайт:** https://rasul-max-oss.github.io/Supa-Coffee.-Landing-page/
 
-## Демо
-
-Попробуйте сайт прямо сейчас: https://rasul-max-oss.github.io/Supa-Coffee.-Landing-page/
-
 ## Особенности
 
 - **Полный адаптив** для всех размеров экранов (мобильные, планшеты, десктоп)
