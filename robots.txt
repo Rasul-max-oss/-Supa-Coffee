@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://rasul-max-oss.github.io/Supa-Coffee/sitemap.xml
+
+# Crawl-delay in seconds
+Crawl-delay: 1
+
+# Request-rate
+Request-rate: 1/1s
